@@ -1,5 +1,5 @@
-///<reference path='../DefinitelyTyped/node/node.d.ts' />
-///<reference path='../DefinitelyTyped/mongodb/mongodb.d.ts' />
+/// <reference path="../node/node.d.ts" />
+/// <reference path="../mongodb/mongodb.d.ts" />
 
 interface ConnectionOptions {
   db?: any;
