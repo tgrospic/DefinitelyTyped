@@ -81,7 +81,7 @@ interface QueryOptions {
   partial?: any;
 }
 
-interface QueryStream extends ReadableStream {
+interface QueryStream extends NodeJS.ReadableStream {
   readable: boolean;
   paused: boolean;
   pause(): void;
@@ -125,7 +125,7 @@ declare module "mongoose" {
     name: string;
   }
 
-  interface Connection extends NodeEventEmitter {
+  interface Connection extends NodeJS.EventEmitter {
     new (base: Mongoose): Connection;
 
     open(connection_string: string, database?: string, port?: number, options?: ConnectionOptions, callback?: (err: any, db?: any) => void): Connection;
